@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+
+<h1>Lista de pessoas cadastradas</h1>
+
+{% for pessoa in pessoas %}
+    <p>{{pessoa.nome}} {{pessoa.sobrenome}} --> {{pessoa.motivo}}</p>
+{% endfor %}
+
+{% endblock %}
